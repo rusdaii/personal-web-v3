@@ -19,8 +19,12 @@ const animation = {
 
 const HeroCta = () => {
   return (
-    <motion.div className="flex flex-wrap gap-5" initial="hide" animate="show">
-      <motion.div variants={animation} transition={{ delay: 0.7 }}>
+    <motion.div className="flex flex-wrap gap-5">
+      <motion.div
+        initial={animation.hide}
+        animate={animation.show}
+        transition={{ delay: 0.5 }}
+      >
         <Link href={socialMedia.github} target="_blank">
           <Button
             pill
@@ -34,9 +38,10 @@ const HeroCta = () => {
       </motion.div>
 
       <motion.div
-        variants={animation}
-        transition={{ delay: 1 }}
-        className="relative items-center flex z-10"
+        initial={animation.hide}
+        animate={animation.show}
+        transition={{ delay: 0.7 }}
+        className="relative items-center flex"
       >
         <AvailableForWork />
       </motion.div>
