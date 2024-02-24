@@ -36,7 +36,7 @@ const NavbarDesktop = ({ resume }: Props) => {
         <Container className="flex justify-between items-center py-2 lg:py-3">
           <div className="flex items-center">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="logo"
               width={256}
               height={256}
