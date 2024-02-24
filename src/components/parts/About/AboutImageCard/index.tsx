@@ -29,17 +29,26 @@ const AboutImageCard = ({ user }: { user: User }) => {
         className="about-card self-end bg-white rounded-[32px] p-3 col-span-9 h-[345px] 
         relative transition-all ease-in-out duration-500 bento-card"
       >
-        <button className="absolute top-[1.4rem] right-[2rem] bg-transparent border-none">
+        <button
+          className="absolute top-[1.4rem] right-[2rem] bg-transparent border-none"
+          aria-label="Email"
+        >
           <Link href={`mailto:${user.email}`} target="_blank">
             <FiMail className="w-5 h-5 text-white hover:text-primary transition-colors duration-300" />
           </Link>
         </button>
-        <button className="absolute top-[1.4rem] right-[4rem] bg-transparent border-none">
+        <button
+          className="absolute top-[1.4rem] right-[4rem] bg-transparent border-none"
+          aria-label="Github"
+        >
           <Link href={socialMedia.github} target="_blank">
             <BsGithub className="w-5 h-5 text-white hover:text-primary transition-colors duration-300" />
           </Link>
         </button>
-        <button className="absolute top-[1.4rem] right-[6rem] bg-transparent border-none">
+        <button
+          className="absolute top-[1.4rem] right-[6rem] bg-transparent border-none"
+          aria-label="LinkedIn"
+        >
           <Link href={socialMedia.linkedin} target="_blank">
             <BsLinkedin className="w-5 h-5 text-white hover:text-primary transition-colors duration-300" />
           </Link>
@@ -68,19 +77,12 @@ const AboutImageCard = ({ user }: { user: User }) => {
             <span className="block text-white text-sm mt-4">{user.about}</span>
           </div>
           <div className="flex absolute justify-end items-center bottom-3 left-6 right-6">
-            {/* <div className="flex gap-4 text-dark ">
-              <Link href={socialMedia.github}>
-                <BsGithub className="w-5 h-5 hover:text-white transition-colors duration-300" />
-              </Link>
-              <Link href={socialMedia.linkedin}>
-                <BsLinkedin className="w-5 h-5 hover:text-white transition-colors duration-300" />
-              </Link>
-            </div> */}
             <Button
               outline
               pill
               gradientDuoTone="purpleToPink"
-              className="button-outline  "
+              className="button-outline"
+              aria-label="Download Resume"
             >
               <IoMdDownload />
               <Link href={user.resume} target="_blank">

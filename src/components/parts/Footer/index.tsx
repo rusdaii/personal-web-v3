@@ -38,6 +38,7 @@ const Footer = () => {
                 href={socialMedia.mail}
                 icon={PiPaperPlaneTiltBold}
                 className="social-icon"
+                ariaLabel="Send me an email"
               />
 
               <FooterFlowBite.Icon
@@ -45,12 +46,14 @@ const Footer = () => {
                 icon={BsLinkedin}
                 className="social-icon"
                 target="_blank"
+                ariaLabel="Follow me on LinkedIn"
               />
               <FooterFlowBite.Icon
                 href={socialMedia.github}
                 icon={BsGithub}
                 className="social-icon"
                 target="_blank"
+                ariaLabel="Follow me on GitHub"
               />
             </div>
           </Container>
