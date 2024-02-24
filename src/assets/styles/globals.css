@@ -37,7 +37,7 @@
   .hero::after {
     content: '';
     display: block;
-    background-image: url('/images/planets.png');
+    background-image: url('/images/planets.webp');
     background-position: bottom;
     background-size: cover;
     position: absolute;
