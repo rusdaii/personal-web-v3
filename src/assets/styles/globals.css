@@ -25,7 +25,7 @@
   .hero::before {
     content: '';
     display: block;
-    background-image: url('/images/mountains.png');
+    background-image: url('/images/mountains.webp');
     background-size: cover;
     background-position: bottom;
     width: 100%;
