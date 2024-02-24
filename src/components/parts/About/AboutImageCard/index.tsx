@@ -33,7 +33,11 @@ const AboutImageCard = ({ user }: { user: User }) => {
           className="absolute top-[1.4rem] right-[2rem] bg-transparent border-none"
           aria-label="Email"
         >
-          <Link href={`mailto:${user.email}`} target="_blank">
+          <Link
+            href={`mailto:${user.email}`}
+            target="_blank"
+            aria-label="Email"
+          >
             <FiMail className="w-5 h-5 text-white hover:text-primary transition-colors duration-300" />
           </Link>
         </button>
@@ -41,7 +45,7 @@ const AboutImageCard = ({ user }: { user: User }) => {
           className="absolute top-[1.4rem] right-[4rem] bg-transparent border-none"
           aria-label="Github"
         >
-          <Link href={socialMedia.github} target="_blank">
+          <Link href={socialMedia.github} target="_blank" aria-label="Github">
             <BsGithub className="w-5 h-5 text-white hover:text-primary transition-colors duration-300" />
           </Link>
         </button>
@@ -49,7 +53,11 @@ const AboutImageCard = ({ user }: { user: User }) => {
           className="absolute top-[1.4rem] right-[6rem] bg-transparent border-none"
           aria-label="LinkedIn"
         >
-          <Link href={socialMedia.linkedin} target="_blank">
+          <Link
+            href={socialMedia.linkedin}
+            target="_blank"
+            aria-label="LinkedIn"
+          >
             <BsLinkedin className="w-5 h-5 text-white hover:text-primary transition-colors duration-300" />
           </Link>
         </button>
