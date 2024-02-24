@@ -8,7 +8,6 @@ import theme from '@/assets/theme/flowbite';
 import ParticleBackground from '@/components/elements/ParticleBackground';
 import Footer from '@/components/parts/Footer';
 import Navbar from '@/components/parts/Navbar';
-import Providers from '@/components/parts/Providers';
 import generateMetadata from '@/lib/metadata';
 
 export const metadata = generateMetadata();
@@ -28,16 +27,14 @@ export default function RootLayout({
       suppressHydrationWarning={true}
     >
       <body className={`bg-dark ${debugScreen}`}>
-        <Providers>
-          <Flowbite theme={{ theme: theme }}>
-            <div className="min-h-dvh flex flex-col">
-              <Navbar />
-              <ParticleBackground />
-              <main className="flex-1 relative">{children}</main>
-              <Footer />
-            </div>
-          </Flowbite>
-        </Providers>
+        <Flowbite theme={{ theme: theme }}>
+          <div className="min-h-dvh flex flex-col">
+            <Navbar />
+            <ParticleBackground />
+            <main className="flex-1 relative">{children}</main>
+            <Footer />
+          </div>
+        </Flowbite>
       </body>
     </html>
   );
